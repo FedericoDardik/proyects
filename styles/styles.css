@@ -1,0 +1,264 @@
+@media screen and (min-width: 1000px) {
+    * {
+        font-family: "Kanit", sans-serif;
+    }
+    /* -------------------------------------- CONTENEDOR GRID -------------------------------------------- */
+    html {
+        scroll-behavior: smooth;
+        user-select: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .body {
+        display: grid;
+        grid-template-areas: 'header'
+                             'section'
+                             'footer';
+        grid-template-columns: auto;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .aside {
+        grid-area: aside;
+    }
+
+    .section {
+        grid-area: section;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    /* ------------------------------------------- HEADER ------------------------------------------------- */
+
+    .header { /* ----- BARRA SUP ---- */
+        width: 100%; 
+        position: fixed;
+        z-index: 150;
+        top: 0vw;
+        box-shadow: 0px 0px 5px 0px black;
+    }
+
+    .nav-header { /* ----- NAVEGADOR ---- */
+        background-color: white;
+        text-align: center;
+        padding: 0.5vw 0vw;
+    }
+
+    .nav-header li { /* ----- LISTA ---- */
+        display: inline-block;
+        margin-right: 3vw;
+    }
+
+    .nav-header li a { /* ----- LINKS+ ---- */
+        text-decoration: none;
+        color: black;
+        font-size: 1.2vw;
+        padding: 0.2vw 1vw;
+    }
+
+    .nav-header li a:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border-radius: 10px;
+    }
+
+    /* ------------------------------------------- PHOTO PROFILE ------------------------------------------------- */
+
+    .photo-profile {
+        width: 35vw;
+        position: absolute;
+        right: 4vw;
+        top: 5vw;
+        border: 2px solid black;
+        border-radius: 10px;
+        z-index: 10;
+    }
+
+    /* ------------------------------------------- SECTION1 ------------------------------------------------- */
+
+    .section1 a:hover {
+        text-decoration: underline;
+    }
+
+    .section1 a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .section1-article0 a, .section1-article1 a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    .section1 {
+        background-color: #0a5b93;  /* ----- SECCION GRAL 1 ---- */
+        padding: 5vw 0vw 8vw 0vw;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------ */
+
+    .div-section1, .section1-article2 {
+        width: 60%; 
+    }
+
+    /* ----------------- ARTICLE1 ------------------ */
+
+    .section1-article0, .section1-article1, .section1-article2, .section1-article3, .section1-article4, .section1-article5, .section1-article6, .section1-article7, .section1-article8 {  /* ----- Article ---- */
+        width: 80%;
+        margin: auto;
+        padding: 0.2vw 0vw;
+    }
+
+    .sec1-art0-div, .sec1-art1-div, .sec1-art2-div, .sec1-art3-div, .sec1-art4-div, .sec1-art5-div, .sec1-art6-div, .sec1-art7-div, .sec1-art8-div { /* ----- Caja Article ---- */
+        height: 4vw;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        border-radius: 10px;
+        border: 5px solid black;
+    }
+
+    /* ----------------- HOVER ------------------ */
+
+    .sec1-art0-div:hover, .sec1-art1-div:hover, .sec1-art2-div:hover, .sec1-art3-div:hover, .sec1-art4-div:hover, .sec1-art5-div:hover, .sec1-art6-div:hover, .sec1-art7-div:hover, .sec1-art8-div:hover {
+        position: relative;
+        z-index: 100;
+        height: auto;
+        background-color: #0a5b93;
+        color: white;
+    }
+
+    /* --------------------------------------------- */
+
+    .art0-h2, .art1-h2, .art2-h2, .art3-h2, .art4-h2, .art5-h2, .art6-h2, .art7-h2, .art8-h2 { /* ----- Titulo Article ---- */
+        margin: 1vw 0vw;
+        font-size: 1.5vw;
+    }
+
+    .art0-p, .art0-ul, .art1-p, .art1-ul, .art2-p, .art3-p, .art3-ul, .art4-p, .art5-p, .art5-ul, .art6-p, .art6-ul, .art7-p, .art7-ul, .art8-p, .art8-ul { /* ----- Texto y Lista Article ---- */
+        font-size: 1.2vw;
+    }
+ 
+    .art0-ul, .art1-ul, .art3-ul, .art5-ul, .art6-ul, .art7-ul, .art8-ul { /* ----- Lista Article ---- */
+        margin: 1vw 0vw;
+    }
+
+    /* ------------------------------------------- SECTION2 ------------------------------------------------- */
+
+    .section2 {
+        position: relative;
+        padding: 6vw 0vw 4vw 0vw;
+        background-color: rgb(194, 71, 71);
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section2 a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    /* ----------------- ARTICLE ------------------ */
+
+    .sec2-art1, .sec2-art2, .sec2-art3 {
+        background-color: rgb(255, 255, 255);
+        height: 34vw;
+        width: 30vw;
+        margin: auto;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .sec2-art1-h3, .sec2-art2-h3, .sec2-art3-h3 {
+        margin: 2vw 0vw;
+        font-size: 2vw;
+    }
+
+    .sec2-art1-ul, .sec2-art2-ul, .sec2-art3-ul {
+        font-size: 1.2vw;
+    }
+
+    .sec2-art1-ul li, .sec2-art2-ul li, .sec2-art3-ul li {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        width: 70%;
+        margin: 1vw auto;
+        border-radius: 10px;
+        padding: 0.2vw;
+    }
+
+    .sec2-art1-ul li:hover, .sec2-art2-ul li:hover, .sec2-art3-ul li:hover {
+        transform: scale(1.1);
+    }
+
+    /* ------------------------------------------- ASIDE ------------------------------------------------- */
+
+    .aside {
+        position: absolute;
+        z-index: 10;
+        right: 2vw;
+    }
+
+    .aside-a {
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 1vw;
+        position: fixed;
+        bottom: 1.5vw;
+        right: 2.5vw;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .aside-a:hover {
+        transform: scale(1.1);
+    }
+
+    /* ------------------------------------------- FOOTER ------------------------------------------------- */
+
+    .footer {
+        width: 100%;
+        box-shadow: 5px 0px 0px 0px black;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .footer-ul { /* ----- NAVEGADOR ---- */
+        background-color: white;
+        text-align: center;
+        padding: 1vw 0.5vw 0.5vw 0.5vw;
+        height: 3.5vw;
+        box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw black;
+    }
+
+    .footer-ul li { /* ----- LISTA ---- */
+        display: inline-block;
+        margin-right: 3vw;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+    .footer-ul a { /* ----- LINKS ---- */
+        text-decoration: none;
+        color: black;
+        font-size: 1.2vw;
+        padding: 0.2vw 0.5vw;
+    }
+
+    .footer-ul li a:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border-radius: 10px;
+     }
+
+}
